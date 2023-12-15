@@ -4,14 +4,14 @@ import Loading from "@/app/loading"
 import NotFound from "@/app/not-found"
 import SideBar from "@/components/Docter/SideBar/SideBar"
 import EditProfileDokter from "@/components/Form/EditProfileDokter/EditProfileDokter"
-import Cookies from "js-cookie"
+// import Cookies from "js-cookie"
 import React, { useEffect, useState } from "react"
 
 const EditUser = () => {
   const [userLogin, setUserLogin] = useState("")
 
   useEffect(() => {
-    const roleLogin = Cookies.get("role")
+    const roleLogin = localStorage.getItem("role")
     setUserLogin(roleLogin)
   }, [])
 

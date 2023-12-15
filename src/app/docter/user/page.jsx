@@ -12,7 +12,7 @@ import SideBar from "@/components/Docter/SideBar/SideBar"
 // assets
 import docter from "@/../public/assets/docter.svg"
 import { CiEdit } from "react-icons/ci"
-import Cookies from "js-cookie"
+// import Cookies from "js-cookie"
 import NotFound from "@/app/not-found"
 import Loading from "@/app/loading"
 
@@ -20,7 +20,7 @@ const User = () => {
   const [userLogin, setUserLogin] = useState("")
 
   useEffect(() => {
-    const roleLogin = Cookies.get("role")
+    const roleLogin = localStorage.getItem("role")
     setUserLogin(roleLogin)
   }, [])
 

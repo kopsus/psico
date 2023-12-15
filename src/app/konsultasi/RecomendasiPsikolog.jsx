@@ -5,7 +5,7 @@ import Image from "next/image"
 import imgDocter from "@/../public/assets/docter.svg"
 import "./konsultasi.css"
 import ChatKonsultasi from "./ChatKonsultasi"
-import Cookies from "js-cookie"
+// import Cookies from "js-cookie"
 import Swal from "sweetalert2"
 
 const RecomendasiPsikolog = () => {
@@ -13,7 +13,7 @@ const RecomendasiPsikolog = () => {
   const [user, setUser] = useState("")
 
   useEffect(() => {
-    const role = Cookies.get("role")
+    const role = localStorage.getItem("role")
     setUser(role)
   }, [])
 

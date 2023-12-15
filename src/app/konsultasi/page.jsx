@@ -6,7 +6,7 @@ import RecomendasiPsikolog from "./RecomendasiPsikolog"
 import TextKonsultasi from "./TextKonsultasi"
 import Navbar from "@/components/Navbar/Navbar"
 import Footer from "@/components/Footer/Footer"
-import Cookies from "js-cookie"
+// import Cookies from "js-cookie"
 import SideBar from "@/components/Docter/SideBar/SideBar"
 import { Konsultasi } from "../../components/Docter/konsultasi/Konsultasi"
 import Loading from "../loading"
@@ -15,7 +15,7 @@ const PageKonsultasi = () => {
   const [userLogin, setUserLogin] = useState("")
 
   useEffect(() => {
-    const roleLogin = Cookies.get("role")
+    const roleLogin = localStorage.getItem("role")
     setUserLogin(roleLogin)
   }, [])
 
