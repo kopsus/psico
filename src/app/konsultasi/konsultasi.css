@@ -1,0 +1,359 @@
+.psikolog {
+  font-family: reg;
+  margin: 100px 0;
+  padding: 0 7%;
+}
+
+.psikolog p:nth-child(1) {
+  font-family: semi;
+  font-size: 20px;
+}
+
+.psikolog_content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.psikolog_content_item {
+  display: flex;
+  height: 177px;
+  gap: 10px;
+  margin: auto;
+  border: 2px solid #066283;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.psikolog_content_item_img img {
+  border-radius: 10px;
+}
+
+.psikolog_content_item_desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.psikolog_content_item_desc p:nth-child(1) {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.psikolog_content_item_desc p:nth-child(2) {
+  font-size: 15px;
+}
+
+.psikolog_content_item_desc_place {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 30px;
+}
+
+.psikolog_content_item_desc_place svg {
+  width: 20px;
+  height: auto;
+}
+
+.psikolog_content_item_desc_place p {
+  font-size: 12px !important;
+}
+
+.psikolog_content_item_desc_action button {
+  border-radius: 5px;
+  background: #066283;
+  font-size: 14px;
+  font-weight: semi;
+  color: white;
+  padding: 5px 13px;
+  border: none;
+  cursor: pointer;
+}
+
+/* text konsultasi */
+.textKonsultasi {
+  font-family: reg;
+  padding: 50px 7%;
+  margin-top: 100px;
+  background: rgba(210, 233, 241, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textKonsultasi1 p:nth-child(1),
+.textKonsultasi2 p:nth-child(1),
+.textKonsultasi3 p:nth-child(1),
+.textKonsultasi3 ol li {
+  font-size: 18px;
+  font-family: semi;
+}
+
+.textKonsultasi1 p:nth-child(2),
+.textKonsultasi2 p:nth-child(2),
+.textKonsultasi3 p:nth-child(2) {
+  font-size: 16;
+}
+
+.textKonsultasi3 ol {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: decimal;
+}
+
+/* chat konsultasi */
+.chatKonsultasi {
+  border: 1px solid #066283;
+  position: fixed;
+  right: 30px;
+  bottom: -100%;
+  width: 30%;
+  border-radius: 10px;
+  height: 421px;
+  overflow: hidden;
+  background-color: #066283;
+  transition: bottom 0.3s ease;
+  z-index: 10000;
+}
+
+.chatKonsultasi.active {
+  bottom: 80px;
+}
+
+.chatKonsultasi_profile {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 70px;
+}
+
+.chatKonsultasi_profile_img {
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 100%;
+  background-color: antiquewhite;
+}
+
+.chatKonsultasi_profile_desc {
+  color: white;
+}
+
+.chatKonsultasi_profile_desc p:nth-child(1) {
+  font-size: 16px;
+}
+
+.chatKonsultasi_profile_desc p:nth-child(2) {
+  font-size: 14px;
+}
+
+.chatKonsultasi_chat {
+  height: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.chatKonsultasi_chat_text_you {
+  width: 60%;
+  border: 1px solid #066283;
+  margin-bottom: 10px;
+  border-radius: 0 5px 5px 5px;
+  padding: 5px;
+}
+
+.chatKonsultasi_chat_text_you p,
+.chatKonsultasi_chat_text_me p {
+  font-size: 14px !important;
+  font-family: reg !important;
+}
+
+.chatKonsultasi_chat_text_me {
+  display: flex;
+  align-items: end;
+  width: 60%;
+  border: 1px solid #066283;
+  float: right;
+  margin-bottom: 10px;
+  border-radius: 0 5px 5px 5px;
+  padding: 5px;
+}
+
+.chatKonsultasi_chat_input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  /* list psikolog */
+  .psikolog {
+    margin: 0;
+  }
+
+  .psikolog p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .psikolog_content {
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .psikolog_content_item {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .psikolog_content_item_desc p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .psikolog_content_item_desc p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .psikolog_content_item_desc_place {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+  }
+
+  .psikolog_content_item_desc_place svg {
+    width: 15px;
+  }
+
+  .psikolog_content_item_desc_action button {
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  /* end psikolog */
+
+  /* text konsultasi */
+  .textKonsultasi {
+    padding: 40px 5%;
+    margin-top: 50px 0;
+  }
+
+  .textKonsultasi1 p:nth-child(1),
+  .textKonsultasi2 p:nth-child(1),
+  .textKonsultasi3 p:nth-child(1),
+  .textKonsultasi3 ol li {
+    font-size: 16px;
+  }
+
+  .textKonsultasi1 p:nth-child(2),
+  .textKonsultasi2 p:nth-child(2),
+  .textKonsultasi3 p:nth-child(2),
+  .textKonsultasi3 ol p {
+    font-size: 14px;
+  }
+
+  /* chat konsultasi */
+  .chatKonsultasi {
+    right: 20px;
+    width: 50%;
+    height: 521px;
+  }
+
+  .chatKonsultasi_profile {
+    height: 70px;
+  }
+
+  .chatKonsultasi_profile_img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .chatKonsultasi_profile_desc p:nth-child(1) {
+    font-size: 14px !important;
+  }
+
+  .chatKonsultasi_profile_desc p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .chatKonsultasi_chat {
+    height: 450px;
+  }
+
+  .chatKonsultasi_chat_text_you p,
+  .chatKonsultasi_chat_text_me p {
+    font-size: 12px !important;
+  }
+
+  .chatKonsultasi_chat_input {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .psikolog {
+    padding: 0 5%;
+  }
+
+  .psikolog p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .psikolog_content {
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .psikolog_content_item {
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .psikolog_content_item_img {
+    overflow: hidden;
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  .psikolog_content_item_img img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .psikolog_content_item_desc_place {
+    margin: 10px 0;
+  }
+
+  .psikolog_content_item_desc {
+    gap: 0;
+  }
+
+  .psikolog_content_item_desc p:nth-child(1) {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .psikolog_content_item_desc p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  /* chat konsultasi */
+  .chatKonsultasi {
+    width: 70%;
+    height: 400px;
+  }
+
+  .chatKonsultasi_chat {
+    height: 330px;
+  }
+}

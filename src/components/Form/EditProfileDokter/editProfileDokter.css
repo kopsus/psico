@@ -1,0 +1,65 @@
+.ediDokter {
+  margin: 15vh 40px 40px 30%;
+  font-family: reg;
+  border: 2px solid #066283;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px 100px;
+}
+
+.ediDokter_img {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ediDokter_img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.ediDokter_img input {
+  height: 40px;
+}
+
+.form_item {
+  display: flex;
+  align-items: center;
+}
+
+.form_item_select p,
+.form_item label {
+  font-size: 16px;
+  flex: 0.6;
+}
+
+.form_item input,
+.form_item_select_content {
+  flex: 1.4;
+  height: 40px;
+  font-size: 14px;
+}
+
+.select {
+  min-height: 40px;
+  height: 40px;
+}
+
+.form_item_select {
+  display: flex;
+  align-items: center;
+}
+
+.btn_edit {
+  background-color: #066283;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  color: white;
+  font-size: 14px;
+  margin: 30px auto;
+}

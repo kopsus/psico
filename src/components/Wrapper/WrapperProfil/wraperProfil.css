@@ -1,0 +1,73 @@
+.wraperProfil {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  background-color: #d2e9f1;
+  height: 60vh;
+  overflow: hidden;
+  padding: 0 7%;
+  position: relative;
+  margin-top: 12vh;
+  font-family: reg;
+}
+
+.wraperProfil_user {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wraperProfil_user_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: bisque;
+  overflow: hidden;
+}
+
+.wraperProfil_user_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wraperProfil_user_desc_user p:nth-child(1) {
+  font-family: semi;
+  font-size: 20px;
+}
+
+.wraperProfil_user_desc_user p:nth-child(2) {
+  color: var(--blue-grey-50, #697579);
+  font-size: 16px;
+}
+
+.wraperProfil_user_desc_place {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wraperProfil_user_action {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.wraperProfil_user_action {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wraperProfil_user_action a:nth-child(1) {
+  background: #066283;
+  color: white;
+}
+
+.wraperProfil_user_action button:nth-child(2) {
+  background-color: #e10000;
+  color: white;
+}

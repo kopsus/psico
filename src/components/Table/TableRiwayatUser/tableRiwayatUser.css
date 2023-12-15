@@ -1,0 +1,23 @@
+.riwayat {
+  font-family: semi;
+  font-size: 24px;
+  text-align: center;
+  margin: 50px 0 20px;
+}
+
+.tableRiwayat {
+  font-family: reg;
+  width: 80%;
+  margin: 0 auto 50px;
+  border-radius: 20px;
+  background: var(--soft-green-90, #066283);
+}
+
+thead tr {
+  font-size: 16px;
+  font-family: semi;
+}
+
+tbody tr {
+  font-family: 14px;
+}

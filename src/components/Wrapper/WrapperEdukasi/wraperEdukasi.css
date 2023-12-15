@@ -1,0 +1,125 @@
+.wraperEdukasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  background-color: #d2e9f1;
+  height: 60vh;
+  overflow: hidden;
+  padding: 0 7%;
+  position: relative;
+  margin-top: 12vh;
+}
+
+.wraperEdukasi_desc {
+  flex: 1.3;
+}
+
+.wraperEdukasi_desc p:nth-child(1) {
+  font-size: 36px;
+  color: #23435c;
+  font-family: semi;
+}
+
+.wraperEdukasi_desc p:nth-child(2) {
+  font-size: 18px;
+  color: rgba(35, 67, 92, 0.7);
+  font-family: reg;
+}
+
+.wraperEdukasi_img {
+  flex: 0.7;
+}
+
+.wraperEdukasi_img img {
+  width: 80%;
+  margin: auto;
+}
+
+.slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 100px 0;
+}
+
+.slogan p {
+  font-size: 20px;
+  font-family: reg;
+}
+
+.slogan_img {
+  width: 10%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .wraperEdukasi {
+    margin-top: 8vh;
+    height: 30vh;
+  }
+
+  .wraperEdukasi_desc p:nth-child(1) {
+    font-size: 30px;
+  }
+
+  .wraperEdukasi_desc p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .wraperEdukasi_img img {
+    width: 100%;
+  }
+
+  .slogan {
+    gap: 16px;
+    margin: 50px 0;
+  }
+
+  .slogan p {
+    font-size: 18px;
+  }
+
+  .slogan_img {
+    width: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .wraperEdukasi {
+    padding: 0 5%;
+    gap: 20px;
+  }
+
+  .wraperEdukasi_desc p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .wraperEdukasi_desc p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .wraperEdukasi_desc {
+    flex: 1.1;
+  }
+
+  .wraperEdukasi_img {
+    flex: 0.9;
+  }
+
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0;
+  }
+
+  .slogan p {
+    font-size: 14px;
+  }
+
+  .slogan_img {
+    width: 20%;
+  }
+}

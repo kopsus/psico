@@ -1,0 +1,75 @@
+.userDokter {
+  margin: 15vh 40px 40px 27%;
+  font-family: reg;
+  border: 2px solid #066283;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.userDokter_user {
+  display: flex;
+  background-color: #d2e9f1;
+  align-items: start;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.userDokter_parent {
+  display: flex;
+  gap: 30px;
+}
+
+.userDokter_user_img {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.userDokter_user_desc p:nth-child(1) {
+  font-family: semi;
+  font-size: 16px;
+}
+
+.userDokter_user_desc p:nth-child(2) {
+  font-size: 14px;
+  font-family: reg;
+}
+
+.userDokter_user_desc_address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.userDokter_user_desc_address p {
+  font-size: 14px;
+}
+
+.userDokter_user_action {
+  display: flex;
+  align-items: center;
+  background-color: #066283;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  gap: 5px;
+}
+
+.userDokter_user_action button {
+  font-size: 14px;
+}
+
+.cancel_edit {
+  background-color: red;
+  padding: 5px 10px;
+  font-family: reg;
+  font-size: 14px;
+  color: white;
+  border-radius: 10px;
+}
+
+.userDokter_riwayat {
+  padding: 20px;
+}

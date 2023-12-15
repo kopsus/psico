@@ -1,0 +1,161 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 13vh;
+  background-color: #d2e9f1;
+  padding: 0 7%;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  font-family: reg;
+}
+
+.navbar_item {
+  display: flex;
+  align-items: center;
+  gap: 117px;
+}
+
+.navbar_item_hamburger {
+  display: none;
+}
+
+.navbar_item_logo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar_item_list {
+  display: flex;
+  align-items: flex-start;
+  gap: 41px;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: reg;
+  cursor: pointer;
+}
+
+.navbar_item_list a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar_item_list a:hover {
+  font-family: semi;
+  color: black;
+}
+
+.navbar_item_list a.active {
+  font-family: semi;
+  color: black;
+}
+
+.navbar_btn {
+  display: flex;
+  padding: 5px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #066283;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  cursor: pointer;
+  font-family: reg;
+}
+
+.navbar_btn:hover {
+  background: #064359;
+}
+
+.navbar_user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar_user p {
+  font-size: 14px;
+}
+
+.navbar_user_img {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #066283;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    height: 8vh;
+  }
+
+  .navbar_item {
+    gap: 30px;
+  }
+
+  .navbar_item_logo img {
+    width: 80%;
+  }
+
+  .navbar_item_list {
+    font-size: 14px;
+    gap: 30px;
+  }
+
+  .navbar_btn {
+    font-size: 12px;
+  }
+
+  .navbar_user {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0 5%;
+    border-bottom: 1px solid #064359;
+  }
+
+  .navbar_item_hamburger {
+    display: flex;
+  }
+
+  .navbar_item_list {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background-color: #066283;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 30px;
+    border-top: 1px solid #064359;
+    transition: left 300ms ease;
+  }
+
+  .navbar_item_list.active {
+    left: 0;
+  }
+
+  .navbar_item_list a,
+  .navbar_item_list a.active,
+  .navbar_item_list a:hover {
+    color: white;
+  }
+
+  .navbar_item_logo img {
+    margin: auto;
+  }
+}

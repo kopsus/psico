@@ -1,0 +1,21 @@
+.tableRiwayat {
+  font-size: 20px;
+  font-family: semi;
+  text-align: center;
+  margin: 10px 0 10px;
+  color: #066283;
+}
+
+.tableRiwayat_dokter {
+  background: var(--soft-green-90, #066283);
+  border-radius: 20px;
+}
+
+thead tr {
+  font-size: 16px;
+  font-family: semi;
+}
+
+tbody tr {
+  font-family: 14px;
+}

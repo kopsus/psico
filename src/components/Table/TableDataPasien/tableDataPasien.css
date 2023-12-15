@@ -1,0 +1,55 @@
+.dataPasien {
+  margin-top: 15vh;
+  margin-left: 27%;
+  font-family: reg;
+  padding-right: 40px;
+}
+
+.dataPasien_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.dataPasien_title p:nth-child(1) {
+  font-family: semi;
+  font-size: 20px;
+  color: #066283;
+}
+
+.dataPasien_search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid #066283;
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+
+.dataPasien_search input {
+  outline: none;
+}
+
+.tableDataPasien {
+  border: 2px solid #066283;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.tableDataPasien table {
+  width: 100%;
+  text-align: center;
+}
+
+.tableDataPasien table thead {
+  border-bottom: 2px solid #066283;
+}
+
+.tableDataPasien table thead tr th {
+  padding-bottom: 10px;
+}
+
+.tableDataPasien table tbody tr td {
+  padding-top: 20px;
+}

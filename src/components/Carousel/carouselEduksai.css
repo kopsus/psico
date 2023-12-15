@@ -1,0 +1,125 @@
+.edukasi {
+  padding: 0 5%;
+  margin: 100px 0;
+}
+
+.edukasi_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edukasi_title p:nth-child(1) {
+  color: #066283;
+  font-family: semi;
+  font-size: 20px;
+}
+
+.edukasi_title p:nth-child(2) {
+  color: #066283;
+  font-size: 16px;
+  font-family: reg;
+  cursor: pointer;
+}
+
+.edukasi_carousel {
+  margin-top: 10px;
+}
+
+.edukasi_carousel p:nth-child(1) {
+  display: none;
+}
+
+.edukasi_carousel_content {
+  height: 296px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: white;
+}
+
+.edukasi_carousel_content_img {
+  width: 100%;
+  height: 170px;
+}
+
+.edukasi_carousel_content p {
+  margin: 10px;
+}
+
+.edukasi_carousel_content p:nth-child(2) {
+  color: #066283;
+  font-size: 16px;
+  font-family: semi;
+}
+
+.edukasi_carousel_content p:nth-child(3) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-family: reg;
+}
+
+@media (max-width: 1024px) {
+  .edukasi {
+    margin: 70px 0;
+  }
+
+  .edukasi_title p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .edukasi_title p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .edukasi_carousel_content {
+    height: 256px;
+  }
+
+  .edukasi_carousel_content_img {
+    height: 150px;
+  }
+
+  .edukasi_carousel_content p {
+    margin: 5px;
+  }
+
+  .edukasi_carousel_content p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .edukasi_carousel_content p:nth-child(3) {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .edukasi_title {
+    margin-left: 5%;
+  }
+
+  .edukasi {
+    padding: 0;
+  }
+
+  .edukasi_carousel {
+    /* background-color: #d2e9f1; */
+    display: flex;
+    /* gap: 5px; */
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .edukasi_carousel p:nth-child(1) {
+    flex: 0.7;
+    display: block;
+    font-size: 16px;
+    font-family: semi;
+    color: #066283;
+    text-align: center;
+  }
+
+  .mySwiper {
+    flex: 1.3;
+  }
+}

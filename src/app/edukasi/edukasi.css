@@ -1,0 +1,128 @@
+.seection_edukasi {
+  background: #f6fbfc;
+  padding: 0 5%;
+}
+
+.sectionEdukasi1,
+.sectionEdukasi2 {
+  display: flex;
+  padding: 5% 0;
+  gap: 50px;
+}
+
+.sectionEdukasi1_desc,
+.sectionEdukasi2_desc {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sectionEdukasi1_desc p:nth-child(1),
+.sectionEdukasi2_desc p:nth-child(1) {
+  font-size: 30px;
+  font-family: semi;
+}
+
+.sectionEdukasi1_desc p:nth-child(1) span {
+  color: #066283;
+}
+
+.sectionEdukasi1_desc p:nth-child(2) {
+  color: #066283;
+  font-size: 20px;
+  font-family: semi;
+}
+
+.sectionEdukasi1_desc p:nth-child(3),
+.sectionEdukasi1_desc p:nth-child(4),
+.sectionEdukasi2_desc p:nth-child(2),
+.sectionEdukasi2_desc p:nth-child(3) {
+  font-family: reg;
+  font-size: 16px;
+}
+
+.sectionEdukasi1_img,
+.sectionEdukasi2_img {
+  flex: 0.8;
+  height: 453px;
+  overflow: hidden;
+}
+
+.sectionEdukasi1_img img,
+.sectionEdukasi2_img img {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* section 2 */
+.sectionEdukasi2_desc p span:nth-child(1) {
+  color: #ff0303;
+}
+
+.sectionEdukasi2_desc p span:nth-child(2) {
+  color: #066283;
+}
+
+@media (max-width: 1024px) {
+  .sectionEdukasi1,
+  .sectionEdukasi2 {
+    padding: 5% 0;
+    gap: 20px;
+  }
+
+  .sectionEdukasi1_desc,
+  .sectionEdukasi2_desc {
+    gap: 10px;
+  }
+
+  .sectionEdukasi1_desc p:nth-child(1),
+  .sectionEdukasi2_desc p:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .sectionEdukasi1_desc p:nth-child(2),
+  .sectionEdukasi2_desc p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .sectionEdukasi1_desc p:nth-child(3),
+  .sectionEdukasi1_desc p:nth-child(4),
+  .sectionEdukasi2_desc p:nth-child(2),
+  .sectionEdukasi2_desc p:nth-child(3) {
+    font-size: 14px;
+  }
+
+  .sectionEdukasi1_img,
+  .sectionEdukasi2_img {
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .sectionEdukasi1,
+  .sectionEdukasi2 {
+    flex-direction: column;
+  }
+
+  .sectionEdukasi1_img,
+  .sectionEdukasi2_img {
+    flex: 200px;
+    border-radius: 10px;
+  }
+
+  .sectionEdukasi1_desc p:nth-child(1),
+  .sectionEdukasi2_desc p:nth-child(1) {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .sectionEdukasi2_desc {
+    order: 2;
+  }
+
+  .sectionEdukasi2_img {
+    order: 1;
+  }
+}

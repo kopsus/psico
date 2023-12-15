@@ -1,0 +1,156 @@
+.wraperKonsultasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  background-color: #d2e9f1;
+  height: 60vh;
+  overflow: hidden;
+  padding: 0 7%;
+  position: relative;
+  margin-top: 12vh;
+}
+
+.wraperKonsultasi_desc {
+  flex: 1.3;
+}
+
+.wraperKonsultasi_desc p {
+  width: 70%;
+}
+
+.wraperKonsultasi_desc p:nth-child(1) {
+  font-size: 36px;
+  color: #23435c;
+  font-family: semi;
+}
+
+.wraperKonsultasi_desc p:nth-child(2) {
+  font-size: 18px;
+  color: rgba(35, 67, 92, 0.7);
+  font-family: reg;
+}
+
+.wraperKonsultasi_img {
+  flex: 0.7;
+}
+
+.wraperKonsultasi_img img {
+  width: 25%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.search {
+  width: 40%;
+  height: 40px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: -15px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 4px 0px rgba(6, 98, 131, 0.5);
+  background: #fff;
+  overflow: hidden;
+}
+
+.search input {
+  width: 90%;
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.search svg {
+  position: absolute;
+  width: 20px;
+  right: 20px;
+  top: 8px;
+}
+
+@media (max-width: 1024px) {
+  .wraperKonsultasi {
+    margin-top: 8vh;
+    height: 30vh;
+  }
+
+  .wraperKonsultasi_desc {
+    flex: 1.1;
+  }
+
+  .wraperKonsultasi_desc p {
+    width: 100%;
+  }
+
+  .wraperKonsultasi_desc p:nth-child(1) {
+    font-size: 30px;
+  }
+
+  .wraperKonsultasi_desc p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .wraperKonsultasi_img {
+    flex: 0.9;
+  }
+
+  .wraperKonsultasi_img img {
+    width: 35%;
+  }
+
+  .search {
+    width: 50%;
+    height: 40px;
+    margin: 50px auto;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wraperKonsultasi {
+    padding: 0 5%;
+  }
+
+  .wraperKonsultasi_desc {
+    flex: 1.3;
+  }
+
+  .wraperKonsultasi_desc p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .wraperKonsultasi_desc p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .wraperKonsultasi_img {
+    flex: 0.7;
+  }
+
+  .wraperKonsultasi_img img {
+    width: 45%;
+    right: 5%;
+  }
+
+  .search {
+    width: 80%;
+    height: 35px;
+  }
+
+  .search input {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+
+  .search svg {
+    position: absolute;
+    width: 15px;
+    right: 10px;
+    top: 5px;
+  }
+}

@@ -1,0 +1,116 @@
+.sideBar {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background-color: #066283;
+}
+
+.sideBar_logo {
+  background-color: #23435c;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  display: flex;
+}
+
+.sideBar_logo img {
+  width: 180px;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+}
+
+.sideBar_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: reg;
+  color: white;
+  padding-top: 20px;
+}
+
+.sideBar_content_item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.sideBar_content_item_dashboard,
+.sideBar_content_item_konsultasi,
+.sideBar_content_item_data,
+.sideBar_content_item_riwayat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sideBar_content_item_dashboard:hover,
+.sideBar_content_item_konsultasi:hover,
+.sideBar_content_item_data:hover,
+.sideBar_content_item_riwayat:hover {
+  background-color: #23435c;
+}
+
+.sideBar_content_item_dashboard.active,
+.sideBar_content_item_konsultasi.active,
+.sideBar_content_item_data.active,
+.sideBar_content_item_riwayat.active {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #23435c;
+}
+
+.sideBar_content_item_dashboard a:nth-child(2),
+.sideBar_content_item_konsultasi a:nth-child(2),
+.sideBar_content_item_data a:nth-child(2),
+.sideBar_content_item_riwayat a:nth-child(2) {
+  font-size: 16px;
+  font-family: semi;
+}
+
+.sideBar_content_user {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sideBar_content_user_img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.sideBar_content_user p:nth-child(2) {
+  font-family: semi;
+  font-size: 16px;
+}
+
+.navbar_dokter {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 75%;
+  background-color: #d2e9f1;
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.navbar_dokter button {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.navbar_dokter button:hover {
+  background-color: rgb(237, 5, 5);
+}
