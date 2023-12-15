@@ -11,7 +11,7 @@ import SideBar from "@/components/Docter/SideBar/SideBar"
 import { Konsultasi } from "../../components/Docter/konsultasi/Konsultasi"
 import Loading from "../loading"
 
-const page = () => {
+const PageKonsultasi = () => {
   const [userLogin, setUserLogin] = useState("")
 
   useEffect(() => {
@@ -44,4 +44,4 @@ const page = () => {
   }
 }
 
-export default page
+export default PageKonsultasi

@@ -7,7 +7,7 @@ import Cookies from "js-cookie"
 import NotFound from "@/app/not-found"
 import Loading from "@/app/loading"
 
-const page = () => {
+const DataPasien = () => {
   const [userLogin, setUserLogin] = useState("")
 
   useEffect(() => {
@@ -31,4 +31,4 @@ const page = () => {
   }
 }
 
-export default page
+export default DataPasien

@@ -7,7 +7,7 @@ import EditProfileDokter from "@/components/Form/EditProfileDokter/EditProfileDo
 import Cookies from "js-cookie"
 import React, { useEffect, useState } from "react"
 
-const page = () => {
+const EditUser = () => {
   const [userLogin, setUserLogin] = useState("")
 
   useEffect(() => {
@@ -35,4 +35,4 @@ const page = () => {
   }
 }
 
-export default page
+export default EditUser
