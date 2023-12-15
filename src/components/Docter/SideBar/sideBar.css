@@ -100,7 +100,7 @@
   background-color: #d2e9f1;
   height: 10vh;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding-right: 50px;
 }

@@ -9,7 +9,7 @@
 .userDokter_user {
   display: flex;
   background-color: #d2e9f1;
-  align-items: start;
+  align-items: flex-start;
   padding: 40px;
   justify-content: space-between;
 }

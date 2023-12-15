@@ -13,7 +13,6 @@
 }
 
 .wraperProfil_user {
-  /* flex: 1; */
   display: flex;
   align-items: center;
   gap: 20px;
@@ -50,10 +49,9 @@
 }
 
 .wraperProfil_user_action {
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .wraperProfil_user_action {

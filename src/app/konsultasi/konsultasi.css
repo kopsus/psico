@@ -177,7 +177,7 @@
 
 .chatKonsultasi_chat_text_me {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   width: 60%;
   border: 1px solid #066283;
   float: right;
