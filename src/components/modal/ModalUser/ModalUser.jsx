@@ -35,10 +35,7 @@ const ModalUser = ({ modalUser, openFormLogin, setModalUser }) => {
                 d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg>
-            <Link
-              onClick={() => setModalUser(!modalUser)}
-              href={"profilePasien"}
-            >
+            <Link onClick={() => setModalUser(!modalUser)} href={"pasien"}>
               Setting
             </Link>
           </div>

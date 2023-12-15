@@ -25,7 +25,7 @@ const ChatKonsultasi = ({ openChat, handleOpenChat }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="white"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
@@ -57,7 +57,7 @@ const ChatKonsultasi = ({ openChat, handleOpenChat }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"
@@ -71,7 +71,7 @@ const ChatKonsultasi = ({ openChat, handleOpenChat }) => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"

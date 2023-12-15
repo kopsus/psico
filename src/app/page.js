@@ -7,15 +7,15 @@ import Navbar from "@/components/Navbar/Navbar"
 import Footer from "@/components/Footer/Footer"
 import { useEffect, useState } from "react"
 import SideBar from "@/components/Docter/SideBar/SideBar"
-// import Cookies from "js-cookie"
 import Dashboard from "@/components/Docter/Dashboard/Dashboard"
 import Loading from "./loading"
+import Cookies from "js-cookie"
 
 export default function Home() {
   const [userLogin, setUserLogin] = useState("")
 
   useEffect(() => {
-    const roleLogin = localStorage.getItem("role")
+    const roleLogin = Cookies.get("role")
     setUserLogin(roleLogin)
   }, [])
 

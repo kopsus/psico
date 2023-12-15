@@ -54,9 +54,11 @@ const Navbar = () => {
             </Link>
             <Link
               className={
-                pathname && pathname.startsWith("/konsultasi") ? "active" : ""
+                pathname && pathname.startsWith("/konsultasiPasien")
+                  ? "active"
+                  : ""
               }
-              href={"/konsultasi"}
+              href={"/konsultasiPasien"}
             >
               Konsultasi
             </Link>

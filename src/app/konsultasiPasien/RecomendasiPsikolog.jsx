@@ -5,15 +5,15 @@ import Image from "next/image"
 import imgDocter from "@/../public/assets/docter.svg"
 import "./konsultasi.css"
 import ChatKonsultasi from "./ChatKonsultasi"
-// import Cookies from "js-cookie"
 import Swal from "sweetalert2"
+import Cookies from "js-cookie"
 
 const RecomendasiPsikolog = () => {
   const [openChat, setOpenChat] = useState(false)
   const [user, setUser] = useState("")
 
   useEffect(() => {
-    const role = localStorage.getItem("role")
+    const role = Cookies.get("role")
     setUser(role)
   }, [])
 
